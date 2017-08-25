@@ -10,4 +10,13 @@ export class SitterService {
   getSitters() {
     return SITTERS;
   }
+
+  getSitterById(sitterId: number){
+    for (var i = 0; i <= SITTERS.length - 1; i++) {
+      if (SITTERS[i].id === sitterId) {
+        return SITTERS[i];
+      }
+    }
+  }
+
 }
