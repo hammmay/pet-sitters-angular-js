@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Sitter } from '../sitter.model';
 import { Router } from '@angular/router';
 import { SitterService } from '../sitter.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-roster',
@@ -11,7 +12,7 @@ import { SitterService } from '../sitter.service';
 })
 
 export class RosterComponent implements OnInit {
-  sitters: Sitter[];
+  sitters: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private sitterService: SitterService){}
 

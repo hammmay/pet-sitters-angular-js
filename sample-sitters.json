@@ -1,0 +1,14 @@
+{ "sitters": [{
+    "name": "Mary",
+    "animal": "Dogs, Cats",
+    "bio": "Mary is from California.",
+    "email": "mary33@email.com",
+    "id": "1"
+    }, {
+    "name": "Frank",
+    "animal": "Cats, Snakes, Birds",
+    "bio": "Frank loves animals.",
+    "email": "frank64@email.com",
+    "id": "2"
+  }]
+}

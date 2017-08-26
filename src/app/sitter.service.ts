@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Sitter } from './sitter.model';
 import { SITTERS } from './mock-sitters';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class SitterService {
+    sitters: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+    this.sitters = database.list('sitters');
+  }
 
   getSitters() {
-    return SITTERS;
+    return this.sitters;
   }
 
   getSitterById(sitterId: number){
