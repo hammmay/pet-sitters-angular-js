@@ -1,6 +1,6 @@
 <div>
-  <h3>{{sitterToDisplay.name}}</h3>
-  <p>Favorite Pets: {{sitterToDisplay.animal}}</p>
-  <p>A little about {{sitterToDisplay.name}}: {{sitterToDisplay.bio}}</p>
-  <p>Email: {{sitterToDisplay.email}}</p>
+  <h3>{{(sitterToDisplay | async).name}}</h3>
+  <p>Favorite Pets: {{(sitterToDisplay | async).animal}}</p>
+  <p>A little about {{(sitterToDisplay | async).name}}: {{(sitterToDisplay | async).bio}}</p>
+  <p>Email: {{(sitterToDisplay | async).email}}</p>
 </div>

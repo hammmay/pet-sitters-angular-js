@@ -1,4 +1,4 @@
-//OnInit?
+
 import { Component, OnInit } from '@angular/core';
 import { SitterService } from '../sitter.service';
 import { Sitter } from '../sitter.model';

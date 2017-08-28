@@ -20,9 +20,7 @@ export class RosterComponent implements OnInit {
     this.sitters = this.sitterService.getSitters();
   }
 
-  goToDetailPage(clickedSitter: Sitter) {
-//     this.router.navigate(['sitters', clickedSitter.id]);
+  goToDetailPage(clickedSitter) {
+     this.router.navigate(['sitters', clickedSitter.$key]);
    };
 }
-
-////

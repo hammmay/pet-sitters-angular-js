@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Sitter } from './sitter.model';
-//import { SITTERS } from './mock-sitters';
+//import { SITTERS } from './mock-sitters';//
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -19,12 +19,9 @@ export class SitterService {
     this.sitters.push(newSitter);
   }
 
-  getSitterById(sitterId: number){
-    // for (var i = 0; i <= SITTERS.length - 1; i++) {
-    //   if (SITTERS[i].id === sitterId) {
-    //     return SITTERS[i];
-    //   }
-    // }
+  getSitterById(sitterId: string){
+    return this.database.object('sitters/' + sitterId);
   }
+
 
 }
