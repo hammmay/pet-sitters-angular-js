@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 
 export class RosterComponent implements OnInit {
   sitters: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private sitterService: SitterService){}
 

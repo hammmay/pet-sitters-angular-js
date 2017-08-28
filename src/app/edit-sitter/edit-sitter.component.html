@@ -1,0 +1,17 @@
+<h4>Update This Sitter</h4>
+
+<label>Change Name:</label>
+<input [(ngModel)]="selectedSitter.name">
+
+<label>Update Email:</label>
+<input [(ngModel)]="selectedSitter.email">
+<br>
+
+<label>Update Favorite Pets:</label>
+<textarea [(ngModel)]="selectedSitter.animal"></textarea>
+
+<label>Update Bio:</label>
+<textarea [(ngModel)]="selectedSitter.bio"></textarea>
+<br>
+
+<button (click)="beginUpdatingSitter(selectedSitter)">Update</button>

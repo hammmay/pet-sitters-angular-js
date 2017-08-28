@@ -1,7 +1,14 @@
 <h2>Roster of Volunteers</h2>
 
-<div *ngFor="let sitter of sitters | async" (click)="goToDetailPage(sitter)" class="panel panel-default">
+<div *ngFor="let sitter of sitters | async" class="panel panel-default">
   <div class="panel-body">
-    <h4>{{sitter.name}} - Favorite Pets: <em>{{sitter.animal}}</em></h4>
+    <h4 (click)="goToDetailPage(sitter)">{{sitter.name}} - Favorite Pets: <em>{{sitter.animal}}</em></h4>
+    <div *ngIf="currentRoute === '/admin'">
+      {{sitter.bio}}
+      <br>
+      {{sitter.email}}
+      <hr>
+      <app-edit-sitter [selectedSitter]="sitter"></app-edit-sitter>
+    </div>
   </div>
 </div>

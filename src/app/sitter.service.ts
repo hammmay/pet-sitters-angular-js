@@ -20,8 +20,15 @@ export class SitterService {
   }
 
   getSitterById(sitterId: string){
-    return this.database.object('sitters/' + sitterId);
+    return this.database.object('/sitters/' + sitterId);
   }
 
+  updateSitter(localUpdatedSitter){
+    var sitterEntryInFirebase = this.getSitterById(localUpdatedSitter.$key);
+    sitterEntryInFirebase.update({name: localUpdatedSitter.name,
+                                animal: localUpdatedSitter.animal,
+                                bio: localUpdatedSitter.bio,
+                                email: localUpdatedSitter.email});
+  }
 
 }
