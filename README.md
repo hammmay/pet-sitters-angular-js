@@ -44,6 +44,10 @@ This application is a demonstration of JavaScript Angular using Firebase databas
 |---|---|---|
 |User clicks on the About or the Roster in the header and they are redirected to an About page or a Roster page respectively|User clicks on About in the header|User is taken to the About page|
 |User clicks on the Admin in the footer and they are redirected to a page where a sitter can be added|User clicks on Admin in the footer|User is taken to the Add New Sitter Admin page|
+|User clicks on the name of a sitter from either the admin page or the roster page and they are redirected to a page that gives additional details about the sitter|User clicks on a sitter named "Mary" in the roster|User is taken to Mary's details page|
+|On the admin page, a user types in the field to add a new volunteer sitter and clicks on the Add Volunteer! button to save the entry to the roster|User enters text into each field for a new volunteer before clicking the Add Volunteer! button|User sees the new entry saved on the roster|
+|On the admin page, a user types in any field within the update this volunteer section, and the changes reflect instantly on the volunteer entry with the option to save these changes with the Update button|User changes a volunteer named Mary, to Marie and then presses the Update button|User sees Marie instead of Mary on the roster and volunteer's details page|
+|On the admin page, a user hits the Delete This Volunteer button and a prompt appears to ask if they want to delete the entry before deleting them everywhere if confirmed|User presses the Delete This Volunteer button for a volunteer named Marie and confirms in the prompt window|The volunteer Marie is deleted from all volunteer lists|
 
 ### Legal
 
