@@ -4,13 +4,14 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { RosterComponent }   from './roster/roster.component';
 import { SitterDetailComponent }   from './sitter-detail/sitter-detail.component';
+import { AdminComponent }   from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: HomeComponent
   },
-  { 
+  {
     path: 'about',
     component: AboutComponent
   },
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'sitters/:id',
     component: SitterDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
  ];
 

@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Add A New Volunteer To The Roster</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Favorite Pets:</label>
+        <br>
+        <input #newAnimal>
+      </div>
+
+      <div>
+        <label>A little about this volunteer:</label>
+        <br>
+        <textarea #newBio></textarea>
+      </div>
+
+      <div>
+        <label>Email:</label>
+        <br>
+        <input #newEmail>
+      </div>
+
+      <button (click)="submitForm(newName.value, newAnimal.value, newBio.value, newEmail.value); newName.value=''; newAnimal.value=''; newBio.value=''; newEmail.value='';">Add Volunteer!</button>
+
+
+    </div>
+  </div>
+</div>

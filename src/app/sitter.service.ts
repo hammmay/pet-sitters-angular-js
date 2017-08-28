@@ -16,11 +16,11 @@ export class SitterService {
   }
 
   getSitterById(sitterId: number){
-    for (var i = 0; i <= SITTERS.length - 1; i++) {
-      if (SITTERS[i].id === sitterId) {
-        return SITTERS[i];
-      }
-    }
+    // for (var i = 0; i <= SITTERS.length - 1; i++) {
+    //   if (SITTERS[i].id === sitterId) {
+    //     return SITTERS[i];
+    //   }
+    // }
   }
 
 }

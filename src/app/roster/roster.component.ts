@@ -21,7 +21,7 @@ export class RosterComponent implements OnInit {
   }
 
   goToDetailPage(clickedSitter: Sitter) {
-     this.router.navigate(['sitters', clickedSitter.id]);
+//     this.router.navigate(['sitters', clickedSitter.id]);
    };
 }
 

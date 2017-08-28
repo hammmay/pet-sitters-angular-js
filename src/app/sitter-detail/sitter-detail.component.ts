@@ -21,7 +21,7 @@ export class SitterDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.sitterId = parseInt(urlParameters['id']);
     });
-    this.sitterToDisplay = this.sitterService.getSitterById(this.sitterId);
+//    this.sitterToDisplay = this.sitterService.getSitterById(this.sitterId);
   }
 
 }

@@ -1,3 +1,3 @@
 export class Sitter {
-  constructor (public name: string, public animal: string, public bio: string, public email: string, public id: number) { }
+  constructor (public name: string, public animal: string, public bio: string, public email: string) { }
 }
