@@ -20,4 +20,9 @@ export class EditSitterComponent implements OnInit {
     this.sitterService.updateSitter(sitterToUpdate);
   }
 
+  beginDeletingSitter(sitterToDelete){
+    if(confirm("You sure?")){
+      this.sitterService.deleteSitter(sitterToDelete);
+    }
+  }
 }

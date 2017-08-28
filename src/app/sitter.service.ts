@@ -31,4 +31,8 @@ export class SitterService {
                                 email: localUpdatedSitter.email});
   }
 
+  deleteSitter(localSitterToDelete){
+    var sitterEntryInFirebase = this.getSitterById(localSitterToDelete.$key);
+    sitterEntryInFirebase.remove();
+  }
 }
